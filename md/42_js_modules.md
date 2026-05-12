@@ -1,0 +1,61 @@
+[Course Home](../README.md) | [How to Run](00_how_to_run.md) | [Common Code Words](00_beginner_code_words.md)
+
+# JS Modules
+
+A module lets one JavaScript file share code with another file.
+
+## Before You Read the Code
+This section comes before the code on purpose. Read these words first, then open `../code/42_js_modules/index.js`.
+
+- `/* ... */` and `//` are comments. Comments are notes for humans, and JavaScript ignores them when the file runs.
+- A semicolon `;` usually ends one JavaScript instruction.
+- Parentheses `()` hold function inputs or conditions. Curly braces `{ ... }` hold a block of code.
+- `=` stores the value on the right inside the variable name on the left.
+- `const` creates a variable name that cannot be reassigned to a different value. This course uses `const` when the name should stay connected to the same value.
+- `let` creates a variable name whose value can change later. Use `let` for counters, scores, totals, and other values that update.
+- `var` is the older way to create variables. You will see it in old code, but modern beginner code should usually use `const` or `let`.
+- `const lines = []` creates one array named `lines`. The name `lines` stays the same, so `const` is correct. The array contents can still grow when the code uses `lines.push(...)`.
+- `[]` means an array. An array is a list that can hold many values in order.
+- `function addLine(text) { ... }` creates a reusable block of code. The word `text` is a parameter, which means a value you give to the function.
+- `console.log(...)` prints a value in the terminal or browser console.
+- `if (typeof document !== "undefined")` checks whether the code is running in a browser. Node.js does not have `document`, so this check prevents errors.
+- `document.getElementById("output")` finds the HTML element with `id="output"` when the file is opened in a browser.
+- `output.textContent = text` puts text on the web page.
+
+## Important Words in This Lesson
+- `export` makes a value available to other module files.
+- `import { add } from "./math-tools.js"` brings the exported function into this file.
+- This folder has a small `package.json` so Node.js runs `index.js` as a module.
+
+## How This Lesson Uses the Words
+- The helper file `math-tools.js` exports an `add` function.
+- The main file imports that function.
+- The main file calls `add(2, 3)` and prints the result.
+
+## Files to Open
+- Markdown explanation: `md/42_js_modules.md`
+- JavaScript code: `code/42_js_modules/index.js`
+- Browser page: `code/42_js_modules/index.html`
+
+## Run in the Terminal
+```bash
+cd code/42_js_modules
+node index.js
+```
+
+## View in the Browser
+```text
+Open code/42_js_modules/index.html in VS Code.
+Right-click the file.
+Choose "Open with Live Preview".
+```
+
+## Small Practice
+- Open `math-tools.js` and read the exported function.
+- Add an exported `multiply` function, then import and use it.
+
+## Extra Note
+Open this lesson through Live Preview for the browser version. Browser modules need a local server, and Live Preview provides one.
+
+
+[Course Home](../README.md)

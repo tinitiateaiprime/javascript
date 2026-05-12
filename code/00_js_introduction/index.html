@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Introduction</title>
+  <!--
+    This page uses CSS to make the lesson easier to read.
+    HTML comments are written like this and are ignored by the browser.
+    In JavaScript code we use // for one-line comments or /* ... */ for block comments.
+  -->
+    <style>
+
+  /* Styles the whole webpage */
+  body {
+
+    /* Removes default outside spacing */
+    margin: 0;
+
+    /* Adds space inside the page */
+    padding: 24px;
+
+    /* Page background color */
+    background: #f5f7fb;
+
+    /* Default text color */
+    color: #18202f;
+
+    /* Text font style */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Space between text lines */
+    line-height: 1.5;
+  }
+
+
+
+  /* Styles the main section */
+  main {
+
+    /* Prevents content from becoming too wide */
+    max-width: 820px;
+
+    /* Centers the content horizontally */
+    margin: 0 auto;
+  }
+
+
+
+  /* Styles all links */
+  a {
+
+    /* Link text color */
+    color: #0f5e8c;
+  }
+
+
+
+  /* Styles elements using class="lesson-panel" */
+  .lesson-panel {
+
+    /* Border around the panel */
+    border: 1px solid #cfd8e3;
+
+    /* Rounded corners */
+    border-radius: 8px;
+
+    /* White background */
+    background: #ffffff;
+
+    /* Space inside the panel */
+    padding: 20px;
+  }
+
+
+
+  /* Styles all buttons */
+  button {
+
+    /* Outside spacing */
+    margin: 0 0 16px;
+
+    /* Space inside button */
+    padding: 10px 14px;
+
+    /* Removes default border */
+    border: 0;
+
+    /* Rounded corners */
+    border-radius: 6px;
+
+    /* Button background color */
+    background: #0f766e;
+
+    /* Button text color */
+    color: #ffffff;
+
+    /* Hand cursor on hover */
+    cursor: pointer;
+
+    /* Text size */
+    font-size: 16px;
+  }
+
+
+
+  /* Styles preformatted/code blocks */
+  pre {
+
+    /* Minimum height */
+    min-height: 150px;
+
+    /* Space inside */
+    padding: 16px;
+
+    /* Rounded corners */
+    border-radius: 8px;
+
+    /* Dark background */
+    background: #111827;
+
+    /* Light text color */
+    color: #e5e7eb;
+
+    /* Adds scrollbars if content is large */
+    overflow: auto;
+
+    /* Keeps line breaks and wraps text */
+    white-space: pre-wrap;
+  }
+
+
+
+  /* Styles canvas elements */
+  canvas {
+
+    /* Makes canvas block element */
+    display: block;
+
+    /* Responsive width */
+    max-width: 100%;
+
+    /* Top spacing */
+    margin-top: 16px;
+
+    /* Border around canvas */
+    border: 1px solid #cfd8e3;
+
+    /* Rounded corners */
+    border-radius: 8px;
+
+    /* White background */
+    background: #ffffff;
+  }
+
+</style>
+</head>
+<body>
+  <main>
+    <p><a href="../../README.md">Course Home</a> | <a href="../../md/00_js_introduction.md">Lesson Notes</a></p>
+    <h1>JS Introduction</h1>
+    <div class="lesson-panel">
+      <p>Read the Markdown lesson first, then run this example.</p>
+      <pre id="output">Loading lesson output...</pre>
+    </div>
+  </main>
+  <script src="./index.js"></script>
+</body>
+</html>
